@@ -1,0 +1,63 @@
+/* FORMULARIO CONTACTO */
+.contacto {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #262626;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.contacto h2 {
+    text-align: center;
+    color: #4fc0c0;
+    margin-bottom: 10px;
+}
+
+.contacto p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #e5e5e5;
+}
+
+.contacto form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #4fc0c0;
+}
+
+.contacto form input,
+.contacto form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #4fc0c0;
+    background-color: #1a1a1a;
+    color: #e5e5e5;
+    font-size: 1rem;
+}
+
+.contacto form input::placeholder,
+.contacto form textarea::placeholder {
+    color: #999;
+}
+
+.contacto form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    background-color: #4fc0c0;
+    color: #1a1a1a;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contacto form button:hover {
+    background-color: #36a1a1;
+    transform: scale(1.05);
+}
