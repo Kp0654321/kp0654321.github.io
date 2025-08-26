@@ -1,24 +1,36 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-body{
-    background-color: rgb(83, 192, 192);
+body {
+    background-color: #1a1a1a;
+    color: #e5e5e5;
     margin: 0;
 }
 
-#headerFijo{
+#headerFijo {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    background-color: #0d1b2a; 
+    padding: 10px 0;
+
 }
 
-#headerFijo button{
-    display:inline-flex;
+#headerFijo button {
+    display: inline-flex;
     flex-direction: column;
     width: auto;
     height: 50px;
+
+    background-color: #4fc0c0; 
+    border: none;
+    border-radius: 15px;
 }
 
-#headerFijo button img{
+#headerFijo button img {
     height: 50px;
     width: auto;
 }
@@ -26,10 +38,12 @@ body{
 /* Por defecto: PC */
 #menu {
     display: flex;
-    flex-direction: row; /* horizontal en PC */
+    flex-direction: row;
+
     justify-content: center;
     align-items: center;
-    position: static; /* no fijo en PC */
+    position: static;
+
     transform: none;
     width: auto;
     height: auto;
@@ -47,7 +61,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(83,192,192);
+    background-color: #0d1b2a; 
     z-index: 9999;
 }
 
@@ -56,44 +70,48 @@ body{
 }
 
 /* Opciones visibles solo si se activa por JS */
-#Opciones{
-    display: none; /* oculto por defecto, JS lo activa solo en Android */
-    background: rgb(76, 192, 192);
+#Opciones {
+    display: none;
+
+    background: #4fc0c0;
+
     border: none;
     border-radius: 15px;
+
+    color: #ffffff;
+    font-weight: bold;
 }
 
 
-#menu button{
+#menu button {
     font-size: x-large;
-    font-family: 'Courier New', Courier, monospace;
 
     height: auto;
-
-    margin: 10px 10px; 
-
+    margin: 10px 10px;
     border-radius: 15px;
-    border: 1px solid beige;
 
-    background-color: aliceblue;
+    border: 1px solid #4fc0c0;
+    background-color: #4fc0c0;
+    color: #ffffff;
 
 }
-a{
+
+a {
     text-decoration: none;
-    color: black;
+    color: #ffffff;
 }
 
-/* Botones dentro del menú se muestran en PC, se ocultan en Android vía JS */
+
+
 
 footer {
-    background-color: #333;   /* Fondo oscuro */
-    color: white;            /* Texto blanco */
+    background-color: #0d0d0d;   
+    color: #f2f2f2;            
     padding: 20px 0;
-    text-align: center;      /* Centra contenido por defecto */
+    text-align: center;
 
     margin-top: 10px;
-    padding: 0;
-        box-sizing: border-box;
+    box-sizing: border-box;
 
 
 }
@@ -106,25 +124,31 @@ footer .container {
 
 footer .row {
     display: flex;
-    flex-wrap: wrap;          /* Que se ajuste en pantallas pequeñas */
+    flex-wrap: wrap;
+    /* Que se ajuste en pantallas pequeñas */
     justify-content: space-between;
     align-items: center;
 }
 
 footer .col-md-4 {
     flex: 1;
-    min-width: 250px;        /* Para que no se deforme en móviles */
+    min-width: 250px;
     margin: 10px 0;
 }
 
 footer h4 {
     margin-bottom: 10px;
     font-size: 18px;
+    color: #4fc0c0; 
+
 }
 
 footer p {
     margin: 5px 0;
     font-size: 14px;
+
+        color: #cccccc;
+
 }
 
 footer .social-icons {
@@ -133,7 +157,7 @@ footer .social-icons {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 15px;               /* Espacio entre iconos */
+    gap: 15px;
 }
 
 footer .social-icons li {
@@ -141,15 +165,15 @@ footer .social-icons li {
 }
 
 footer .social-icons a {
-    color: white;
+    color: #ffffff;
     font-size: 20px;
     transition: color 0.3s ease;
 }
 
 footer .social-icons a:hover {
-    color: #1e90ff;          /* Azul al pasar el mouse */
+    color: #1e90ff;          
 }
 
 footer p {
-    margin: 5px 0; /* o 0 si no quieres nada */
+    margin: 5px 0;
 }
