@@ -1,0 +1,63 @@
+.Enc {
+    text-align: center;
+    margin: 10px 0; /* margen vertical solo */
+}
+.contenedorGeneral {
+    width: 100%;
+    height: 50%;
+
+    width: 100%;
+    display: flex;          /* activa flexbox */
+    flex-wrap: wrap;        /* permite que se vayan a otra línea si no caben */
+    gap: 20px;              /* espacio entre las fotos */
+    justify-content: center; /* centra las fotos horizontalmente */
+    
+}
+
+.contenedor_foto {
+    position: relative;
+
+    max-width: 500px;
+    min-width: 250px;
+    max-height: 500px;
+    min-height: 300px;
+
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.contenedor_foto img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.contenedor_foto:hover .foto {
+    transform: scale(1.1);
+    /* zoom suave al pasar el mouse */
+    opacity: 0.5;;
+}
+
+.contenedor_foto .informacion {
+    text-align: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transform: translateX(100%);
+
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+
+}
+
+.contenedor_foto:hover .informacion {
+    transform: translateX(0);
+
+}

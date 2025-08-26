@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(83, 192, 192);
+}
+
+#headerFijo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerFijo button{
+    display:inline-flex;
+    flex-direction: column;
+    width: auto;
+    height: 50px;
+}
+
+#headerFijo button img{
+    height: 50px;
+    width: auto;
+}
+
+/* Por defecto: PC */
+#menu {
+    display: flex;
+    flex-direction: row; /* horizontal en PC */
+    justify-content: center;
+    align-items: center;
+    position: static; /* no fijo en PC */
+    transform: none;
+    width: auto;
+    height: auto;
+}
+
+/* Para Android, se activará vía JS */
+#menu.Android {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(83,192,192);
+    z-index: 9999;
+}
+
+#menu.Mostrar {
+    transform: translateY(0);
+}
+
+/* Opciones visibles solo si se activa por JS */
+#Opciones{
+    display: none; /* oculto por defecto, JS lo activa solo en Android */
+    background: rgb(76, 192, 192);
+    border: none;
+    border-radius: 15px;
+}
+
+
+#menu button{
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+
+    height: auto;
+
+    margin: 10px 10px; 
+
+    border-radius: 15px;
+    border: 1px solid beige;
+
+    background-color: aliceblue;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Botones dentro del menú se muestran en PC, se ocultan en Android vía JS */
