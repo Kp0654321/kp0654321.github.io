@@ -1,5 +1,7 @@
+
 body{
     background-color: rgb(83, 192, 192);
+    margin: 0;
 }
 
 #headerFijo{
@@ -82,3 +84,72 @@ a{
 }
 
 /* Botones dentro del menú se muestran en PC, se ocultan en Android vía JS */
+
+footer {
+    background-color: #333;   /* Fondo oscuro */
+    color: white;            /* Texto blanco */
+    padding: 20px 0;
+    text-align: center;      /* Centra contenido por defecto */
+
+    margin-top: 10px;
+    padding: 0;
+        box-sizing: border-box;
+
+
+}
+
+footer .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: wrap;          /* Que se ajuste en pantallas pequeñas */
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .col-md-4 {
+    flex: 1;
+    min-width: 250px;        /* Para que no se deforme en móviles */
+    margin: 10px 0;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;               /* Espacio entre iconos */
+}
+
+footer .social-icons li {
+    display: inline-block;
+}
+
+footer .social-icons a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #1e90ff;          /* Azul al pasar el mouse */
+}
+
+footer p {
+    margin: 5px 0; /* o 0 si no quieres nada */
+}
